@@ -3,6 +3,8 @@
   padding: 30px;
   margin-top: 60px;
   width: 100%;
+  position: fixed;
+  z-index: 100;
 }
 
 .legal-header h1 {
@@ -11,7 +13,8 @@
   margin: 0 auto;
 }
 
-main {
+main section {
+  padding-top: 200px;
 }
 
 section {

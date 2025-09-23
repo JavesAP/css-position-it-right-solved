@@ -11,6 +11,7 @@
   right: 35vw;
   height: 500px;
   width: 500px;
+  background-image: linear-gradient(-45deg, lightseagreen, white);
   border: 3px solid red;
   transform: rotate(45deg)
 }
@@ -34,6 +35,7 @@
   left: 4em;
   background-image: linear-gradient(0deg, green, cyan);
   border-radius: 25px;
+  
 }
 
 .robot-eye-left::after {
@@ -45,7 +47,7 @@
   left: 75%;
   border: 2px solid green;
   background-image: linear-gradient(-45deg, green, cyan, green);
-  border-radius: 10px;
+  border-radius: 20px / 25px;
 }
 
 .robot-eye-right,
@@ -70,6 +72,7 @@
   top: -5px;
   right: -5px;
   transform: rotate(90deg);
+  opacity: 75%;
 }
 
 .robot-ear-left, 
@@ -173,31 +176,40 @@
 
 .robot-hair-style {
   position: absolute;
-  height: 50px;
-  width: 50px;
-  border: 2px solid coral;
+  height: 300px;
+  width: 225px;
   top: 9vh;
-  left: 16vw;
+  left: 31vw;
   transform: rotate(45deg);
+}
+
+.robot-hair-style div {
+  width: 85%;
+  height: 10%;
 }
 
 .robot-hair-one {
   position: absolute;
-  height: 50px;
-  width: 50px;
-  border: 2px solid coral;
+  border: 2px solid white;
+  bottom: 5%;
+  right: 5%;
+  background-color: green;
 }
+.robot-hair-one:last-of-type { bottom: 85%; }
 
 .robot-hair-two {
   position: absolute;
-  height: 50px;
-  width: 50px;
-  border: 2px solid coral;
+  border: 2px solid lightskyblue;
+  background-color: yellowgreen;
+  bottom: 25%;
+  right: 8%;
 }
+.robot-hair-two:has(+ div:last-of-type) { bottom: 65% }
 
 .robot-hair-three {
   position: absolute;
-  height: 50px;
-  width: 50px;
-  border: 2px solid coral;
+  border: 2px solid lightseagreen;
+  background-color: yellow;
+  bottom: 45%;
+  right: 12%;
 }
